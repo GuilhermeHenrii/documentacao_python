@@ -297,3 +297,16 @@ print(dado_filtrado)
 
 
 # mais sobre condições
+# while e for pode conter quaisuqer operadores
+# não apenas de comparação
+# curto circuito:
+a = True
+b = 0 # False
+c = True
+
+# vai haver o curto circuito e retornara o valor 0
+curto_circuito = a and b and c
+print(curto_circuito)
+
+
+# Comparação de sequencias
