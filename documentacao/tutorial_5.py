@@ -15,6 +15,12 @@ lista_exemplo = [1, 2, 3, "a", "b", "c", 10, "x", 20, "y"]
 lista_exemplo.extend(["z", 30])
 print(lista_exemplo)
 
+# insert
+# adiciona um item especificando seu indice e seu valor
+lista_exemplo = [1, 2, 3, "a", "b", "c", 10, "x", 20, "y"]
+lista_exemplo.insert(0, "teste") #simula o popleft
+print(lista_exemplo)
+
 # remove
 # remove o primeiro item encontrado na lista
 # se não existir, retorna uma exceção ValueError
@@ -213,6 +219,11 @@ print(x, y, z)
 frutas = {'pera', 'uva', 'mamao', 'pera', 'uva', 'banana'}
 print(frutas)
 
+# vai me retornar um erro
+# python não consegue associar um indice a um valor
+# pois os conjuntos são desordenados
+print(frutas[0])
+
 # criar conjunto vazia
 vazio = set()
 
@@ -297,3 +308,16 @@ print(dado_filtrado)
 
 
 # mais sobre condições
+# while e for pode conter quaisuqer operadores
+# não apenas de comparação
+# curto circuito:
+a = True
+b = 0 # False
+c = True
+
+# vai haver o curto circuito e retornara o valor 0
+curto_circuito = a and b and c
+print(curto_circuito)
+
+
+# Comparação de sequencias
